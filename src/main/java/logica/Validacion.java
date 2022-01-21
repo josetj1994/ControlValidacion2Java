@@ -43,12 +43,11 @@ public class Validacion {
                 tbAutoValidador.getMensaje().setText("Debe introducir un tipo de validacion");
         }
         if(tbAutoValidador.Correcto==true){
-            tbAutoValidador.MensajeComprobacion="Todo Correcto";
-            System.out.println(tbAutoValidador.MensajeComprobacion);
+            tbAutoValidador.MensajeComprobacion=tbAutoValidador.getMensaje().getText();
+           
         }
         else{
             tbAutoValidador.MensajeComprobacion=tbAutoValidador.getMensaje().getText();
-            System.out.println(tbAutoValidador.MensajeComprobacion); 
         }
     }
 }
